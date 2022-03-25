@@ -1,0 +1,75 @@
+.form-component {
+  .form-container {
+    text-align: center;
+  }
+  form {
+    width: 300px;
+    margin: 0 auto;
+
+    input[type="text"] {
+      padding: 1px 10px;
+      border-radius: 10px 10px 10px 10px;
+      border: none;
+      font-size: 1.5rem;
+      display: block;
+      margin: 0 auto;
+      width: 220px;
+      outline: none;
+      text-align: center;
+      height: 40px;
+    }
+
+    ::placeholder {
+      opacity: 0.6;
+      font-family: $font-1;
+    }
+  }
+  .btn-sort-container {
+    margin: 8px auto;
+    width: 220px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+
+    #goodToBad {
+      border-radius: 10px 0 0 10px;
+    }
+    #badToGood {
+      border-radius: 0 10px 10px 0;
+    }
+    #goodToBad,
+    #badToGood {
+      background: $color-1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 35px;
+      transition: 0.3s;
+      position: relative;
+      font-family: $font-2;
+
+      &:hover {
+        background: $black;
+      }
+    }
+    #goodToBad span {
+      transform: translateY(-50%) rotate(-90deg);
+      right: 18px;
+    }
+    #badToGood span {
+      transform: translateY(-50%) rotate(90deg);
+      left: 16px;
+    }
+    #goodToBad span,
+    #badToGood span {
+      position: absolute;
+      top: 50%;
+    }
+  }
+}
+
+.result {
+  display: flex;
+  flex-wrap: wrap;
+}

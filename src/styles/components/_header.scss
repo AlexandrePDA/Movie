@@ -1,0 +1,42 @@
+.header {
+  h1 {
+    font-size: 3.3rem;
+    text-shadow: 2px 3px 0px $color-1;
+    text-align: center;
+    letter-spacing: 4px;
+    font-family: $font-1;
+    margin-bottom: 2rem;
+  }
+  nav {
+    margin: 2rem 0 1.5rem 0;
+    font-size: 1.6rem;
+
+    ul {
+      display: flex;
+      font-family: $font-1;
+
+      li {
+        color: white;
+      }
+
+      a {
+        text-decoration: none;
+        border-radius: 10px;
+        width: 90px;
+        text-align: center;
+        margin-right: 25px;
+
+        &:visited {
+          text-decoration: none;
+        }
+        &:hover {
+          background: $color-1;
+        }
+      }
+      a.nav-active {
+        background-color: grey;
+
+      }
+    }
+  }
+}
